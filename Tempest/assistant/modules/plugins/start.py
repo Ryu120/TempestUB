@@ -10,7 +10,7 @@ from pyrogram.types import Message
 
 @app.bot.on_message(filters.command("start"), group=-1)
 async def send_response(_, m: Message):
-    await m.reply("Hello I am Assistant Of Tempest Ub. How can i help you ?")
+    await m.reply("Hello I am Assistant Of @RyuSenpaiX. How can i help you ?")
 
 
 
