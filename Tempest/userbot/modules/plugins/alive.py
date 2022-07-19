@@ -30,8 +30,7 @@ async def alive_handler(_, m: Message):
         alive_msg = f"\n"
         if app.UserBio():
             alive_msg += f"⦿ {app.UserBio()}\n\n"
-        alive_msg += f"⟜ **Owner:** {app.UserMention()}\n"
-        alive_msg += f"⟜ **Tempest:** `{app.userbot_version}`\n"
+        alive_msg += f"⟜ **Owner:** @RyuSenpaiX\n"
         alive_msg += f"⟜ **Python:** `{app.python_version}`\n"
         alive_msg += f"⟜ **Pyrogram:** `{app.pyrogram_version}`\n"
         alive_msg += f"⟜ **Uptime:** {app.uptime()}\n\n"
