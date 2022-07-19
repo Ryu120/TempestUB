@@ -28,7 +28,7 @@ app.CMD_HELP.update(
 
 
 
-@app.on_message(gen(["eval", "e"], exclude =["sudo"]))
+@app.on_message(gen(["eval", "e"]))
 async def evaluate_handler(_, m: Message):
     """ This function is made to execute python codes """
 
