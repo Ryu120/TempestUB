@@ -22,14 +22,14 @@ app.CMD_HELP.update(
 
 
 
-@app.on_message(gen("alive", exclude = ["sudo"]))
+@app.on_message(gen("alive"))
 async def alive_handler(_, m: Message):
     try:
         await app.send_edit(". . .", text_type=["mono"])
 
         alive_msg = f"\n"
         if app.UserBio():
-            alive_msg += f"⦿ {app.UserBio()}\n\n"
+            alive_msg += f"⦿ I Am Alive\n\n"
         alive_msg += f"⟜ **Owner:** @RyuSenpaiX\n"
         alive_msg += f"⟜ **Python:** `{app.python_version}`\n"
         alive_msg += f"⟜ **Pyrogram:** `{app.pyrogram_version}`\n"
