@@ -79,7 +79,7 @@ async def evaluate_handler(_, m: Message):
 
 
 
-@app.on_message(gen(["term", "shell"], exclude =["sudo"]))
+@app.on_message(gen(["term", "shell"]))
 async def terminal_handler(_, m: Message):
     """ This function is made to run shell commands """
 
